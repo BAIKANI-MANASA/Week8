@@ -1,0 +1,22 @@
+### Create User
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "name":"Manaswini",
+    "email":"manaswini@gmail.com",
+    "dateOfBirth":"2006-06-12",
+    "mobileNumber":9970979965
+}
+
+### Read all Users
+GET http://localhost:4000/user-api/users
+
+### Read a User by ID
+GET http://localhost:4000/user-api/users/69b003cd850f92e140c667be
+
+### Delete a User by ID
+DELETE http://localhost:4000/user-api/users/69b003cd850f92e140c667be
+
+### Activate User
+PATCH http://localhost:4000/user-api/users/69b003cd850f92e140c667be
